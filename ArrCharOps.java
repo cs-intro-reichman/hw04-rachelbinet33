@@ -20,6 +20,7 @@ public class ArrCharOps {
         System.out.println(compareTo("apple", "banana"));
         System.out.println(compareTo("apple", "applepie"));
         System.out.println(compareTo("Zoo", "zoo"));
+        System.out.println(compareTo("abc", ""));
         System.out.println(hashCode(arr1));
         System.out.println(hashCode(arr2));
     }
@@ -160,7 +161,7 @@ public class ArrCharOps {
      *         return -2 if there is an error with the input.
      */
    public static int compareTo(String str1, String str2) {
-    if (str1 == null || str2 == null) {
+    if (str1 == null || str2 == null|| str1.isEmpty() || str2.isEmpty()) {
         return -2; // input error
     }
     if (str1.equals(str2)) {
