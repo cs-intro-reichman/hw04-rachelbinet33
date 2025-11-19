@@ -161,10 +161,10 @@ public class ArrCharOps {
      */
    public static int compareTo(String str1, String str2) {
     if (str1 == null || str2 == null) {
-        return -2;
+        return -2; // input error
     }
     if (str1.equals(str2)) {
-        return 0;
+        return 0; 
     }
 
     if (str1.length() == str2.length()) {
@@ -193,7 +193,7 @@ public class ArrCharOps {
                 }
             }
         }
-        if (issame) return -1;  
+        if (issame) return -1; 
     }
 
     issame = true;
@@ -209,10 +209,10 @@ public class ArrCharOps {
                 }
             }
         }
-        if (issame) return 1;  
+        if (issame) return 1; 
     }
 
-    return 0;
+    return -2; 
 }
 
 }
