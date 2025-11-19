@@ -212,7 +212,7 @@ public class ArrCharOps {
         if (issame) return 1;  
     }
 
-    return -2;
+    return 0;
 }
 
 }
