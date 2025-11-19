@@ -193,7 +193,7 @@ public class ArrCharOps {
                 }
             }
         }
-        if (issame) return -1;  // shorter string → smaller
+        if (issame) return -1;  
     }
 
     issame = true;
@@ -209,10 +209,10 @@ public class ArrCharOps {
                 }
             }
         }
-        if (issame) return 1;  // FIXED: longer string → GREATER
+        if (issame) return 1;  
     }
 
-    return 1;
+    return -2;
 }
 
 }
