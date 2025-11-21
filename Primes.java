@@ -48,13 +48,13 @@ public class Primes {
     public static void println(ArrayList<String> arr,int num) {
         int size = arr.size();
     double percent = ((double) size / num) * 100; 
-    percent = Math.round(percent * 100.0) / 100.0;
+    int percentInt = (int) Math.round(percent);
 
         System.out.println("Prime numbers up to " + num +":");
         for (String s : arr) {
             System.out.println(s);
         }
-        System.out.println("There are " + size + " primes between 2 and "+ num + "(" + percent + "% are primes)" );
+        System.out.println("There are " + size + " primes between 2 and "+ num + " (" + percentInt + "% are primes)" );
 
 
     }
